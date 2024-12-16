@@ -1,0 +1,433 @@
+*{
+margin:0;
+padding: 0 ;
+ /* font-family: "Poppins", serif;
+ font-weight: 400;
+ font-style: normal; */
+
+}
+
+.raves{
+  height:30px ;
+  width: 50px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  }
+.hdiv1{
+  display:  flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 6.5%;
+  
+}
+.hdiv2{
+  display: flex;
+  justify-content: flex-end;
+ align-items: center;
+ padding-right: 15px;
+ margin-right: 7%;
+}
+span{
+  padding: 7px;
+}
+.name{
+  font-size: 100;
+}
+.details{
+  margin-top: 5px;
+}
+.icon{
+  margin-top: 10px;
+}
+button{
+  background-color: rgba(70, 156, 70, 0.2); 
+  border:1px solid rgba(70, 156, 70, 0.4);
+  border-radius:2px ;
+  padding:0px 2px 0px 2px;
+}
+hr {
+  border: none;
+  height: 6px;
+  background-color: #ff6600;
+  margin: 0px 7% 0px 6.5%;
+ 
+  
+}
+.clientInfo{
+  /* display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+}
+.client{
+  padding: 10px;
+  text-align: center; 
+  font-size: small;
+  
+  }
+  .header{
+    padding: 2px;
+  }
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    background-color: #f3f4f6; 
+    border: 1px solid #ddd;
+    gap: 10px;
+    width: 87%;
+    margin-left: 6.5%;
+    
+  }
+  .p{
+    color: #555;
+  }
+
+  .info-item {
+    font-size: 14px;
+    color: #555;
+    margin-left: 2px;
+    
+
+  }
+
+  .info-item strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .info-item .highlight {
+    display: inline-block;
+    background-color: #eef2f7;
+    color: #333;
+    font-weight: bold;
+
+  }
+  .status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 85%;
+    margin-left:7% ;
+}
+
+.status-bar h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.status-bar span {
+    font-weight: 400;
+    color: #888;
+}
+
+.status-options {
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.status {
+    width: 1px;
+    height: 1px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.status.approved {
+    background-color: #468c46; 
+    opacity: 20%;
+    outline:#469646 ;
+    opacity: 40%;
+    
+}
+
+.status.pending {
+    background-color: #ffd600; 
+    opacity: 20%;
+    outline: #ffd600;
+     opacity: 40%;
+    
+}
+
+.status.holiday {
+ background-color: rgba(237, 67, 67, 0.2);
+ border: 1px solid rgba(237, 67, 67, 0.4) ;
+}
+
+.status.leave {
+  background-color: #a48fd9; 
+    opacity: 20%;
+    outline: #a48fd9;
+     opacity: 40%;
+}
+
+
+
+.time-table {
+  width: 87%;
+  border-collapse: collapse;
+  margin: 20px ;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 70px;
+  
+}
+
+.time-table th,
+.time-table td {
+  padding: 10px;
+  
+
+  /* border: 1px solid #ccc; */
+}
+
+thead th {
+  background-color: #f9f9f9;
+  font-weight: 400;
+}
+
+tbody td {
+  text-align: start;
+  
+}
+
+.input-monday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+   border: 1px solid black;
+}
+
+.input-tuesday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgba(70, 156, 70, 0.2); 
+  border:1px solid rgba(70, 156, 70, 0.4)
+
+
+}
+
+.input-wednesday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  
+  border: 1px solid black;
+}
+
+.input-thursday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgba(237, 67, 67, 0.2);
+ border: 1px solid rgba(237, 67, 67, 0.4) ;
+}
+
+.input-friday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+ 
+  border: 1px solid black;
+}
+
+.input-saturday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgba(70, 156, 70, 0.2); 
+  border:1px solid rgba(70, 156, 70, 0.4)
+
+}
+
+.input-sunday {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+ 
+  border: 1px solid black;
+}
+
+.input-total {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+   border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.invoiceContainer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center ;
+  margin-top: 20px;
+  }
+  .invoiceImageLeft{
+    margin-left: 6%;
+  }
+  .invoiceLogo{
+    height: 40px;
+    width: 60px;
+  }
+  .invoiceRight{
+    display: flex;
+    
+    margin-right: 10%;
+    padding: 5px;
+  }
+  ul li{
+    list-style: none;
+    
+  }
+  .contactInfo{
+    
+      padding:5px;
+  }
+  .Address{
+    
+ padding:5px;
+  }
+  .bill{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-left: 6.5%;
+    
+  }
+  .billRight{
+    margin-right: 10%;
+  }
+  .billRightButton{
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .billRightButton h2{
+    margin-left: 100px;
+    margin-right: 30px;
+  }
+  .invoiceDown{
+    display: flex;
+    justify-content: space-between;
+   background-color: #f0f3fa;
+   border: 1px solid rgba(240, 243, 250, 0.9); 
+    padding: 10px 30px;
+    border-radius: 2px;
+  }
+ 
+  .hr{
+    border: none;
+    height: 2px;
+    background-color:rgba(0, 0, 0, 0.132);
+    margin: 0px 7% 0px 6.5%
+  }
+  .table-container {
+    width: 88%;
+    margin: auto;
+    border-radius: 4px;
+    
+    font-size: 12px;
+  }
+
+
+
+  .invoiceTable {
+    width: 100%;
+    border-collapse:collapse ;
+    font-size: 14px;
+    
+    
+  }
+  
+  
+  
+  .invoiceHead th {
+    text-align: left;
+    padding: 2px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    border-collapse: collapse;
+    height: 4px;
+    padding:12px 10px ;
+  }
+  
+  .invoiceBody td {
+    padding:10px;
+    
+    
+    text-align: left;
+  }
+  .invoiceBody tr:nth-child(even) {
+    background-color:#f2f2f2;
+  }
+  
+.invoice-container{
+display: flex;
+justify-content: space-between;
+margin: 0 6%;
+font-size: 12px;
+}
+.invoice-notes{
+  height: 100px;
+  width: 320px;
+  text-align: justify;
+  line-height: 2;
+  letter-spacing: 2;
+  padding:10px 30px 5px 20px;
+  background-color: #fff8dc;
+  margin-left: 3%;
+  border-radius: 2px;
+}
+.invoice-summary{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.summary-row{
+  margin-top:10px;
+}
+.grand-value,.grand-label{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.redButton{
+  background-color: rgba(237, 67, 67, 0.2);
+  border: 1px solid rgba(237, 67, 67, 0.4) ;
+}
+.headings{
+  color: #555;
+}
+
+
+
+  
